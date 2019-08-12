@@ -1,5 +1,6 @@
 #pragma once
 #include "..//NativeCpp/Calculator.h"
+#include "..//NativeCpp/IDestroyable.h"
 //include to Native C++ library in CLR class library project.
 
 namespace CLIWrapper {
@@ -15,16 +16,14 @@ namespace CLIWrapper {
 
 		~CalculatorWrapper() {
 			//Delete class object at Wrapper's destructor.
-			if (obj != nullptr) {
-				delete obj;
-			}
+			NativeCpp::IDestroyable* destroyable = obj;
+			destroyable->Destroy();
 		}
 
 		!CalculatorWrapper() {
 			//Delete class object at Wrapper's destructor.
-			if (obj != nullptr) {
-				delete obj;
-			}
+			NativeCpp::IDestroyable* destroyable = obj;
+			destroyable->Destroy();
 		}
 #pragma region Math Function
 		double Sum(double x, double y) {

@@ -1,8 +1,10 @@
 #pragma once
 #include <iostream>
+#include "IDestroyable.h"
+
 namespace NativeCpp
 {
-	class Calculator {
+	class Calculator :virtual public IDestroyable {
 	public:
 		//Constructor:
 		Calculator() {
@@ -17,6 +19,14 @@ namespace NativeCpp
 		///This function sums two number.
 		double Sum(double x, double y) {
 			return x + y;
+		}
+
+		void Destroy() {
+			Calculator* obj = this;
+			if (obj != nullptr)
+			{
+				delete obj;
+			}
 		}
 	};
 }
