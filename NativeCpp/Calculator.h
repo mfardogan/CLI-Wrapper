@@ -8,12 +8,12 @@ namespace NativeCpp
 	public:
 		//Constructor:
 		Calculator() {
-			std::cout << "Native C++ Calculator object is created on memory!\n";
+			std::cout << "Native C++ Calculator object created on memory!\n";
 		}
 
 		//Destructor
 		~Calculator() {
-			std::cout << "Native C++ Calculator object is destroyed on memory!\n";
+			std::cout << "Native C++ Calculator object destroyed on memory!\n";
 		}
 
 		///This function sums two number.

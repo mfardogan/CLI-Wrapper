@@ -18,8 +18,8 @@ namespace Managed
     }
 }
 /* Output:
-    Native C++ Calculator object is created on memory!
+    Native C++ Calculator object created on memory!
     Result: 20
-    Native C++ Calculator object is destroyed on memory! 
+    Native C++ Calculator object destroyed on memory! 
  */
 
