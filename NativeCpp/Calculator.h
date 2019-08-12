@@ -11,7 +11,7 @@ namespace NativeCpp
 
 		//Destructor
 		~Calculator() {
-			std::cout << "Native C++ Calculator object is destronyed on memory!\n";
+			std::cout << "Native C++ Calculator object is destroyed on memory!\n";
 		}
 
 		///This function sums two number.
