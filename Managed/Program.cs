@@ -8,8 +8,8 @@ namespace Managed
         static void Main(string[] args)
         {
             //You must use using blocks for use the memory as eficient.
-            //Don't worry CaculatorWrapper class is CLI object. That's why, it has Disposable pattern.
-            //You don't need wrapping the object and implement dispose pattern for the CLI object.
+            //Don't worry CaculatorWrapper class is CLI object. That's why, it has a Disposable pattern.
+            //You don't need wrapping and implement dispose pattern for the CLI object.
             using (var wrapper = new CalculatorWrapper())
             {
                 var sum = wrapper.Sum(10, 10); //10 + 10
